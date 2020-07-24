@@ -5,10 +5,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <header class="header">
+    <h1 class="visually-hidden">Интернет магазин ручной работы - «Мишка»</h1>
+    <nav class="main-nav">
+      <div class="main-nav__top">
+        <a href="index.html">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="логотип интернет магазина «Мишка»">
+        </a>
+        <div class="burger burger--close">
+          <span class="burger__item"></span>
+        </div>
+      </div>
+      <div class="main-nav__button">
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a>Поиск по сайту</a>
+          </li>
+          <li class="nav-list__item">
+            <a>Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <main class="catalog-main">
+    <header class="catalog-main__header">
+      <h2 class="catalog-main__title">Каталог товаров</h2>
+    </header>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <div class="container">
+        <article class="catalog__item">
+          <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+          <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="фото товара «Зайчик-попрыгайчик»">
+          <p class="catalog__description">Рост 30 см, вес 200 г</p>
+          <div class="catalog__bottom">
+            <p class="catalog__price">1 200 руб.</p>
+            <img src="img/icon/icon-cart.svg" width="20" height="19" alt="иконка корзины">
+          </div>
+        </article>
+        <article class="catalog__item">
+          <h3 class="catalog__title">Корзинка для белья</h3>
+          <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="фото товара «Корзинка для белья»">
+          <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+          <div class="catalog__bottom">
+            <p class="catalog__price">690 руб.</p>
+            <img src="img/icon/icon-cart.svg" width="20" height="19" alt="иконка корзины">
+          </div>
+        </article>
+        <article class="catalog__item">
+          <h3 class="catalog__title">Большая корзинка для игрушек</h3>
+          <img src="img/photo-hare-mobile@1x.jpg" width="260" height="195"
+            alt="фото товара «Большая корзинка для игрушек»">
+          <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+          <div class="catalog__bottom">
+            <p class="catalog__price">1 500 руб.</p>
+            <img src="img/icon/icon-cart.svg" width="20" height="19" alt="иконка корзины">
+          </div>
+        </article>
+        <div class="catalog__video">
+          <h2 class="catalog__title--video">Процесс<br> производства</h2>
+          <img src="img/video-mobile@1x.jpg" alt="заставка видео «Процесс производства»">
+          <p class="catalog__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+            появляются наши товары.</p>
+          <a class="btn" href="form.html">Сделать заказ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__link social-link">
+        <li class="social-link__item">
+          <a href="https://instagram.com" target="_blank"><img src="img/icon/icon-insta.svg" alt="" width="22"
+              height="21"></a>
+        </li>
+        <li class="social-link__item">
+          <a href="https://instagram.com" target="_blank"><img src="img/icon/icon-fb.svg" alt="" width="15"
+              height="28"></a>
+        </li>
+        <li class="social-link__item">
+          <a href="https://instagram.com" target="_blank"><img src="img/icon/icon-twitter.svg" alt="" width="23"
+              height="20"></a>
+        </li>
+      </ul>
+      <a href="https://htmlacademy.ru">
+        <h3>Разработано</h3>
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="логотип компании «htmlacademy»">
+      </a>
+    </div>
+  </footer>
+
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <form action="https://echo.htmlacademy.ru" method="GET">
+      <div class="modal__size">
+        <button class="modal__btn" type="button">S</button>
+        <button class="modal__btn" type="button">M</button>
+        <button class="modal__btn" type="button">L</button>
+      </div>
+      <button class="btn btn--modal" type="submit">Добавить</button>
+    </form>
+  </section>
 </body>
 
 </html>
