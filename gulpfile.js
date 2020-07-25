@@ -88,7 +88,7 @@ gulp.task("uglify", function () {
   return gulp.src("source/js/script.js")
     .pipe(uglify())
     .pipe(rename("script.min.js"))
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('source/js'))
 });
 
 gulp.task("server", function () {

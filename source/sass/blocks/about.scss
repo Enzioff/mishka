@@ -1,0 +1,36 @@
+.about {
+  padding-bottom: 40px;
+}
+
+.about__title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.about__list {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  img {
+    margin-left: 8px;
+  }
+}
+
+.about__description {
+  order: 1;
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000;
+}

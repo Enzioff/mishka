@@ -1,0 +1,32 @@
+.services__wrapper {
+  display: block;
+}
+
+.services__item {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.services__item--top {
+  background-color: #63d1bb;
+  background-image: url("../../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: right 36px center;
+}
+
+.services__item:last-child {
+  background-color: #56c3b2;
+  background-image: url("../../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  background-position: right 27px center;
+}
+
+.services__title {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+}

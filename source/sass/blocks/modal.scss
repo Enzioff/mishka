@@ -1,0 +1,68 @@
+.modal {
+  position: fixed;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal__inner {
+  padding-top: 36px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+}
+
+.modal__title {
+  margin-bottom: 25px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.modal__text {
+  margin-bottom: 28px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #444;
+}
+
+.modal__size {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__btn {
+  min-width: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  background-color: #fff;
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+  &:focus {
+    border-color: #62d1ba;
+  }
+}

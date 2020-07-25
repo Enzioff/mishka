@@ -32,6 +32,19 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -52,4 +65,47 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+}
+.wrapper {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  text-align: center;
+  color: #444;
+  &:hover {
+    color: #fff;
+    border: 2px solid #444444;
+    background-color: #444;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+.btn--modal {
+  background-color: #63d1bb;
+  color: #fff;
+  border-color: #63d1bb;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-size: contain;
 }
