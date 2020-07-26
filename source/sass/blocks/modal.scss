@@ -66,3 +66,28 @@
     border-color: #62d1ba;
   }
 }
+
+@media (min-width: $tablet-size) {
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+    br {
+      display: none;
+    }
+  }
+  .modal__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .modal__inner {
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .modal__btn {
+    min-width: 32%;
+  }
+}

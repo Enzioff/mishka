@@ -109,3 +109,14 @@ hr {
   background-image: url("../../img/bg-zigzag-line.svg");
   background-size: contain;
 }
+
+@media (min-width: $tablet-size) {
+  .container {
+    width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  hr {
+    height: 16px;
+  }
+}

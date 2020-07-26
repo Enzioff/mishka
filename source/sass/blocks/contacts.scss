@@ -65,3 +65,42 @@
 .contacts__btn {
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-size) {
+  .contacts__title {
+    position: relative;
+    font-size: 43px;
+    line-height: 50px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/icon-flag.svg");
+    }
+  }
+  .contacts__table tbody {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contacts__table {
+    width: 100%;
+    margin: 0;
+  }
+  .contacts__line {
+    min-width: 300px;
+  }
+  .contacts__column:nth-child(2n) {
+    min-width: 220px;
+    br:nth-child(2) {
+      display: none;
+    }
+  }
+  .contacts__btn {
+    max-width: 230px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+  }
+}

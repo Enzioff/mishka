@@ -53,3 +53,9 @@
     transform: translateY(-6px) rotate(-45deg);
   }
 }
+
+@media (min-width: $tablet-size) {
+  .burger {
+    display: none;
+  }
+}

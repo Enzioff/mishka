@@ -18,6 +18,9 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #63d1bb;
+  br {
+    display: none;
+  }
 }
 
 .features__text {
@@ -29,6 +32,7 @@
 }
 
 .features__table {
+  width: 100%;
   margin-bottom: 25px;
   border-collapse: collapse;
 }
@@ -57,4 +61,62 @@
   font-weight: 700;
   color: #444;
   text-align: center;
+}
+
+@media (min-width: $tablet-size) {
+  .features {
+    position: relative;
+  }
+  .line__top {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-size: contain;
+  }
+  .features__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 28px;
+  }
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .features__description {
+    text-align: center;
+    margin: 0;
+    br {
+      display: block;
+    }
+  }
+  .features__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    order: 1;
+    min-width: 333px;
+  }
+  .features__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    padding-right: 377px;
+  }
+  .features__text {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  .features__price {
+    margin: 0 auto;
+    margin-top: 43px;
+    margin-bottom: 34px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

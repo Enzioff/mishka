@@ -30,3 +30,19 @@
   font-weight: 700;
   color: #fff;
 }
+
+@media (min-width: $tablet-size) {
+  .services__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+  }
+  .services__item {
+    padding-top: 35px;
+    padding-bottom: 34px;
+    padding-left: 36px;
+  }
+}

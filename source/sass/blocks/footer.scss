@@ -42,3 +42,36 @@
 .footer__copy {
   fill: #63d1bb;
 }
+
+.footer__logo {
+  display: none;
+}
+
+
+@media (min-width: $tablet-size) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__logo {
+    display: block;
+  }
+  .social-link {
+    padding: 0;
+    margin-left: 70px;
+    border: none;
+    min-width: 150px;
+  }
+  .footer__link--copy {
+    margin: 0;
+    padding: 0;
+    h3 {
+      margin-right: 30px;
+    }
+  }
+}
