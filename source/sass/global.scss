@@ -119,4 +119,13 @@ hr {
   hr {
     height: 16px;
   }
+  .line__top {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-size: contain;
+  }
 }
