@@ -129,3 +129,17 @@ hr {
     background-size: contain;
   }
 }
+@media (min-width: $desktop-size) {
+  .container {
+    width: 1150px;
+  }
+  .container--desktop {
+    padding-left: 225px;
+  }
+  .line__top {
+    height: 34px;
+  }
+  hr {
+    height: 23px;
+  }
+}

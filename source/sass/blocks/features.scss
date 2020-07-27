@@ -111,3 +111,36 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .features {
+    padding-bottom: 70px;
+  }
+  .features__wrapper {
+    padding-right: 583px;
+    padding-left: 175px;
+  }
+  .features__image {
+    bottom: 0;
+    top: auto;
+  }
+  .features__head {
+    margin-top: 117px;
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 47px;
+  }
+  .features__title {
+    z-index: 1;
+  }
+  .features__description {
+    margin-right: 58px;
+    order: -1;
+  }
+  .features__text {
+    margin-bottom: 66px;
+  }
+  .features__table {
+    margin-bottom: 70px;
+  }
+}
