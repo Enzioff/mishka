@@ -1,5 +1,7 @@
 .services__wrapper {
   display: block;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .services__item {
@@ -9,9 +11,6 @@
   padding-bottom: 25px;
   width: 100%;
   cursor: pointer;
-  &:hover {
-    bottom: 5px;
-  }
 }
 
 .services__item--top {
@@ -39,7 +38,7 @@
   .services__wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 768px;
+    min-width: 768px;
     padding-left: 50px;
     padding-right: 50px;
     margin: 0 auto;
@@ -48,11 +47,14 @@
     padding-top: 35px;
     padding-bottom: 34px;
     padding-left: 36px;
+    &:hover {
+      bottom: 5px;
+    }
   }
 }
 
 @media (min-width: $desktop-size) {
   .services__wrapper {
-    max-width: 1150px;
+    min-width: 1150px;
   }
 }

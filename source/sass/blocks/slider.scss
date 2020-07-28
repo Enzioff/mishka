@@ -64,6 +64,8 @@
     flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 86px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 53px;
     background-image: url("../../img/review@1x.jpg");
     background-position: left center;
@@ -95,6 +97,10 @@
 }
 
 @media (min-width: $desktop-size) {
+  .slider {
+    padding-left: 175px;
+    padding-right: 0;
+  }
   .slider__title {
     font-size: 53px;
     line-height: 57px;
