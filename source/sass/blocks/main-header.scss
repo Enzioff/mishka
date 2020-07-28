@@ -16,12 +16,24 @@
   text-align: center;
 }
 
+.promo {
+  display: none;
+}
+
 @media (min-width: $tablet-size) {
   .main__header {
-    padding-top: 160px;
+    padding-top: 0;
     background-image: url("../../img/hero-tablet@1x.jpg");
   }
+  .promo {
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 15px;
+    text-align: right;
+  }
   .main__title {
+    margin-top: 122px;
     margin-bottom: 369px;
     font-size: 42px;
     line-height: 50px;
@@ -34,7 +46,7 @@
 
 @media (min-width: $desktop-size) {
   .main__header {
-    padding-top: 160px;
+    padding-top: 0;
     background-image: url("../../img/hero-desktop@1x.jpg");
   }
   .main__title {
