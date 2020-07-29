@@ -73,123 +73,107 @@
   <main class="form-main">
     <header class="form-main__header">
       <div class="container">
+        <div class="promo">Бесплатная доставка по России</div>
         <h2 class="form-main__title">Вязание на заказ</h2>
       </div>
     </header>
 
-    <section class="form">
+    <section class="form-page">
       <div class="container">
-        <h2 class="visually-hidden">Форма заказа товаров</h2>
-        <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
-          свяжемся с вами, чтобы уточнить детали.</p>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="form__item">
-            <div class="form__wrap">
-              <legend class="form__title">Тип</legend>
-              <div class="form__wrapper">
-                <p class="form__box">
-                  <input class="visually-hidden" type="radio" name="type" id="access" checked>
-                  <label class="form__text form__text--radio" for="access">Аксессуары для<br> интерьера</label>
-                </p>
-                <p class="form__box">
-                  <input class="visually-hidden" type="radio" name="type" id="toy">
-                  <label class="form__text form__text--radio" for="toy">Детская игрушка</label>
-                </p>
-              </div>
-            </div>
+        <h2 class="visually-hidden">Форма вязание на заказ</h2>
+        <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+          свяжемся
+          с вами, чтобы уточнить детали.</p>
+        <form action="#" class="form">
+          <fieldset class="form__box">
+            <h3 class="form__title">Тип</h3>
+            <p class="form__paragraph">
+              <input class="visually-hidden" type="radio" id="radio-1" name="type" checked>
+              <label class="form__label form__label--radio" for="radio-1">Аксессуары для интерьера</label>
+            </p>
+            <p class="form__paragraph">
+              <input class="visually-hidden" type="radio" id="radio-2" name="type">
+              <label class="form__label form__label--radio" for="radio-2">Детская игрушка</label>
+            </p>
           </fieldset>
-          <fieldset class="form__item form__item--color">
-            <div class="form__wrap">
-              <legend class="form__title">Цвет</legend>
-              <div class="form__wrapper form__wrapper--color">
-                <p class="form__box">
-                  <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
-                  <label class="form__text" for="white">Белый</label>
-                </p>
-                <p class="form__box">
-                  <input class="visually-hidden" type="checkbox" name="gray" id="gray" checked>
-                  <label class="form__text" for="gray">Серый</label>
-                </p>
-                <p class="form__box">
-                  <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany">
-                  <label class="form__text" for="tiffany">«Тиффани»</label>
-                </p>
-                <p class="form__box">
-                  <input class="visually-hidden" type="checkbox" name="black" id="black">
-                  <label class="form__text" for="black">Черный</label>
-                </p>
-                <p class="form__box">
-                  <input class="visually-hidden" type="checkbox" name="pink" id="pink">
-                  <label class="form__text" for="pink">Розовый</label>
-                </p>
-                <p class="form__box">
-                  <input class="visually-hidden" type="checkbox" name="orange" id="orange">
-                  <label class="form__text" for="orange">Оранжевый</label>
-                </p>
-              </div>
-            </div>
+
+          <fieldset class="form__box">
+            <h3 class="form__title">Цвет</h3>
+            <p class="form__paragraph">
+              <input class="visually-hidden" type="checkbox" id="check-1" name="white" checked>
+              <label class="form__label form__label--color" for="check-1">Белый</label>
+            </p>
+            <p class="form__paragraph">
+              <input class="visually-hidden" type="checkbox" id="check-2" name="gray" checked>
+              <label class="form__label form__label--color" for="check-2">Серый</label>
+            </p>
+            <p class="form__paragraph">
+              <input class="visually-hidden" type="checkbox" id="check-3" name="tiffany">
+              <label class="form__label form__label--color" for="check-3">«Тиффани»</label>
+            </p>
+            <p class="form__paragraph">
+              <input class="visually-hidden" type="checkbox" id="check-4" name="black">
+              <label class="form__label form__label--color" for="check-4">Черный</label>
+            </p>
+            <p class="form__paragraph">
+              <input class="visually-hidden" type="checkbox" id="check-5" name="pink">
+              <label class="form__label form__label--color" for="check-5">Розовый</label>
+            </p>
+            <p class="form__paragraph">
+              <input class="visually-hidden" type="checkbox" id="check-6" name="orange">
+              <label class="form__label form__label--color" for="check-6">Оранжевый</label>
+            </p>
           </fieldset>
-          <fieldset class="form__item">
-            <div class="form__wrap">
-              <legend class="form__title">ФИО</legend>
-              <div class="form__wrapper form__wrapper--input">
-                <label class="form__fio">
-                  Имя:
-                  <input class="form__input" type="text" placeholder="Введите ваше имя*">
-                </label>
-                <label class="form__fio">
-                  Фамилия:
-                  <input class="form__input" type="text" placeholder="Укажите фамилию*">
-                </label>
-                <label class="form__fio">
-                  Отчество:
-                  <input class="form__input" type="text" placeholder="Отчество, если желаете">
-                </label>
-              </div>
-            </div>
+
+          <fieldset class="form__box">
+            <h3 class="form__title">ФИО</h3>
+            <p class="form__paragraph">
+              <label class="form__label form__label--contact" for="text-1">Имя:</label>
+              <input class="form__input" type="text" id="text-1" name="type" placeholder="Введите ваше имя*">
+            </p>
+            <p class="form__paragraph">
+              <label class="form__label form__label--contact" for="text-2">Фамилия:</label>
+              <input class="form__input" type="text" id="text-2" name="type" placeholder="Укажите фамилию*">
+            </p>
+            <p class="form__paragraph">
+              <label class="form__label form__label--contact" for="text-3">Отчество:</label>
+              <input class="form__input" type="text" id="text-3" name="type" placeholder="Отчество, если желаете">
+            </p>
           </fieldset>
-          <div class="form__contact">
-            <fieldset class="form__item">
-              <div class="form__wrap">
-                <legend class="form__title form__title--m">ТЕЛ</legend>
-                <div class="form__input__wrapper">
-                  <input class="form__input form__input--tel" type="text" placeholder="+7 XXX XX XX*">
-                  <svg class="form__icon form__phone" xmlns="http://www.w3.org/2000/svg" width="24.829" height="24.333">
-                    <path
-                      d="M17.321 24.333h-1.115c-4.904-.58-8.497-2.857-11.11-5.772C2.473 15.637.402 11.875 0 6.817V5.459c.091-.921.544-1.55 1.067-2.086.65-.666 1.63-1.522 2.522-1.553.659-.022 1.78.451 2.232 1.066.388.53.595 1.59.775 2.378.185.797.6 1.95.485 2.717-.176 1.196-1.764 1.703-2.231 2.572 1.551 3.721 4.089 6.456 7.472 8.345.847-.465 1.595-1.864 2.767-1.892.428-.012.972.209 1.406.34.477.143.891.326 1.311.484.705.266 1.957.621 2.378 1.213.433.61.681 1.608.581 2.231-.194 1.234-2.227 2.603-3.444 3.059zM12.529 1.528c5.949 0 10.771 4.822 10.771 10.771h1.529C24.829 5.507 19.323 0 12.529 0v1.528z" />
-                    <path
-                      d="M12.529 9.327v1.552a1.42 1.42 0 011.421 1.42h1.553a2.973 2.973 0 00-2.974-2.972zm0-3.081a6.054 6.054 0 016.056 6.054h1.588a7.642 7.642 0 00-7.644-7.641v1.587z" />
-                  </svg>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="form__item">
-              <div class="form__wrap">
-                <legend class="form__title form__title--m">E-mail</legend>
-                <div class="form__input__wrapper">
-                  <input class="form__input form__input-mail" type="email" placeholder="Ваш Email*">
-                  <svg class="form__icon form__mail" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-                    <path
-                      d="M28 5H4a4 4 0 00-4 4v13a4 4 0 004 4h24a4 4 0 004-4V9a4 4 0 00-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 003.599 0l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z" />
-                  </svg>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-          <fieldset class="form__item form__item--last">
-            <div class="form__wrap">
-              <legend class="form__title">ДОП</legend>
-              <textarea class="form__area" name="request" cols="20" rows="5"
-                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <fieldset class="form__box">
+            <p class="form__paragraph">
+              <label class="form__title" for="phone">ТЕЛ</label>
+            <div class="form__input-wrapper">
+              <input class="form__input" type="text" id="phone" name="type" placeholder="+7 XXX XX XX*">
+              <svg class="form__icon" xmlns="http://www.w3.org/2000/svg" width="24.829" height="24.333">
+                <path
+                  d="M17.321 24.333h-1.115c-4.904-.58-8.497-2.857-11.11-5.772C2.473 15.637.402 11.875 0 6.817V5.459c.091-.921.544-1.55 1.067-2.086.65-.666 1.63-1.522 2.522-1.553.659-.022 1.78.451 2.232 1.066.388.53.595 1.59.775 2.378.185.797.6 1.95.485 2.717-.176 1.196-1.764 1.703-2.231 2.572 1.551 3.721 4.089 6.456 7.472 8.345.847-.465 1.595-1.864 2.767-1.892.428-.012.972.209 1.406.34.477.143.891.326 1.311.484.705.266 1.957.621 2.378 1.213.433.61.681 1.608.581 2.231-.194 1.234-2.227 2.603-3.444 3.059zM12.529 1.528c5.949 0 10.771 4.822 10.771 10.771h1.529C24.829 5.507 19.323 0 12.529 0v1.528z" />
+                <path
+                  d="M12.529 9.327v1.552a1.42 1.42 0 011.421 1.42h1.553a2.973 2.973 0 00-2.974-2.972zm0-3.081a6.054 6.054 0 016.056 6.054h1.588a7.642 7.642 0 00-7.644-7.641v1.587z" />
+              </svg>
             </div>
+            </p>
+            <p class="form__paragraph">
+              <label class="form__title" for="mail">E-MAIL</label>
+            <div class="form__input-wrapper">
+              <input class="form__input" type="text" id="mail" name="type" placeholder="Ваш Email*">
+              <svg class="form__icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                <path
+                  d="M28 5H4a4 4 0 00-4 4v13a4 4 0 004 4h24a4 4 0 004-4V9a4 4 0 00-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 003.599 0l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z" />
+              </svg>
+
+            </div>
+            </p>
           </fieldset>
-          <div class="form__bottom">
-            <small class="form__info">*Поля обязательны для заполнения</small>
-            <button class="btn btn--light" type="submit">Отправить заказ</button>
-          </div>
+          <fieldset class="form__box">
+            <h3 class="form__title">ДОП</h3>
+            <textarea class="form__area" name="area" cols="20" rows="5"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <small class="form__info"><sup>*</sup>Поля обязательны для заполнения</small>
+          <button class="btn" type="submit">Отправить заказ</button>
         </form>
       </div>
-      <div class="line__top"></div>
     </section>
   </main>
 

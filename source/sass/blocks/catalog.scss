@@ -168,10 +168,11 @@
     }
   }
   .catalog-main__header {
-    padding-top: 106px;
+    padding-top: 0px;
     padding-bottom: 86px;
   }
   .catalog-main__title {
+    margin-top: 66px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -289,5 +290,9 @@
   }
   .catalog__info--video {
     padding: 0;
+  }
+  .catalog-main__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
