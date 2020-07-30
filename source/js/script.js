@@ -1,6 +1,9 @@
 var burger = document.querySelector('.burger');
 var menu = document.querySelector('.main-nav__buttom');
 var menuWrapper = document.querySelector('.main-nav__buttom');
+var button = document.querySelector('.btn-open');
+var modal = document.querySelector('.modal');
+var btnModal = document.querySelector('.btn--modal');
 
 menuWrapper.classList.remove('main-nav--nojs');
 
@@ -17,3 +20,16 @@ burger.addEventListener('click', function () {
     menu.classList.add('main-nav__button--close');
   }
 });
+
+button.addEventListener('click', function () {
+  if (modal.classList.contains('modal--close')) {
+    modal.classList.remove('modal--close');
+    modal.classList.add('modal--open');
+  }
+})
+
+btnModal.addEventListener('click', function () {
+  event.preventDefault;
+  modal.classList.remove('modal--open');
+  modal.classList.add('modal--close');
+})

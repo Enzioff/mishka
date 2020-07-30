@@ -45,6 +45,26 @@
 
 .footer__logo {
   display: none;
+  cursor: pointer;
+  &:hover {
+    fill: #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-link__item {
+  a:hover {
+    svg {
+      fill: #46c1ae;
+    }
+  }
+  a:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 

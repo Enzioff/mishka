@@ -870,7 +870,11 @@ hr {
   background-color: #f9f9f9;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-size: 575px;
+  background-position: center -16px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .main__header {
+      background-image: url("../../img/hero-mobile@2x.jpg"); } }
 
 .main__title {
   margin: 0;
@@ -887,7 +891,14 @@ hr {
 @media (min-width: 768px) {
   .main__header {
     padding-top: 0;
-    background-image: url("../../img/hero-tablet@1x.jpg"); }
+    background-image: url("../../img/hero-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .main__header {
+      background-image: url("../../img/hero-tablet@2x.jpg"); } }
+
+@media (min-width: 768px) {
   .promo {
     display: block;
     font-size: 15px;
@@ -906,7 +917,13 @@ hr {
 @media (min-width: 1150px) {
   .main__header {
     padding-top: 0;
-    background-image: url("../../img/hero-desktop@1x.jpg"); }
+    background-image: url("../../img/hero-desktop@1x.jpg");
+    background-size: contain; } }
+  @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 1.5dppx) {
+    .main__header {
+      background-image: url("../../img/hero-desktop@2x.jpg"); } }
+
+@media (min-width: 1150px) {
   .main__title {
     margin-bottom: 360px;
     font-size: 53px;
@@ -1272,8 +1289,14 @@ hr {
     padding-right: 50px;
     padding-bottom: 53px;
     background-image: url("../../img/review@1x.jpg");
+    background-size: contain;
     background-position: left center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .slider {
+      background-image: url("../../img/review@2x.jpg"); } }
+
+@media (min-width: 768px) {
   .slider__title {
     font-size: 43px;
     line-height: 50px;
@@ -1401,8 +1424,10 @@ hr {
     position: absolute;
     bottom: 0;
     right: 0;
-    max-width: 525px;
+    width: 525px;
     max-height: auto; }
+    .map iframe {
+      border: none; }
   .contacts__wrapper {
     position: relative;
     display: -webkit-box;
@@ -1474,7 +1499,18 @@ hr {
   fill: #63d1bb; }
 
 .footer__logo {
-  display: none; }
+  display: none;
+  cursor: pointer; }
+  .footer__logo:hover {
+    fill: #46c1ae; }
+  .footer__logo:active {
+    opacity: 0.3; }
+
+.social-link__item a:hover svg {
+  fill: #46c1ae; }
+
+.social-link__item a:active svg {
+  opacity: 0.3; }
 
 @media (min-width: 768px) {
   .footer {
@@ -1506,7 +1542,9 @@ hr {
 
 .modal {
   position: fixed;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -1577,6 +1615,14 @@ hr {
     border-color: rgba(68, 68, 68, 0.3); }
   .modal__btn:focus {
     border-color: #62d1ba; }
+
+.modal--close {
+  display: none; }
+
+.modal--open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 @media (min-width: 768px) {
   .modal__title {

@@ -68,8 +68,12 @@
     padding-right: 50px;
     padding-bottom: 53px;
     background-image: url("../../img/review@1x.jpg");
+    background-size: contain;
     background-position: left center;
     background-repeat: no-repeat;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../../img/review@2x.jpg");
+    }
   }
   .slider__title {
     font-size: 43px;

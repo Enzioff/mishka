@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -68,6 +68,14 @@
   }
 }
 
+.modal--close {
+  display: none;
+}
+
+.modal--open {
+  display: flex;
+}
+
 @media (min-width: $tablet-size) {
   .modal__title {
     font-size: 30px;
@@ -90,8 +98,4 @@
   .modal__btn {
     min-width: 32%;
   }
-}
-
-@media (min-width: $desktop-size) {
-
 }
