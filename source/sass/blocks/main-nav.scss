@@ -65,12 +65,12 @@
   }
 
   .main-nav__button--close .user-navigation,
-  .main-nav__button--close .site-navigation{
+  .main-nav__button--close .site-navigation {
     display: none;
   }
 
   .main-nav__button--open .user-navigation,
-  .main-nav__button--open .site-navigation{
+  .main-nav__button--open .site-navigation {
     display: block;
   }
 
@@ -284,7 +284,7 @@
     z-index: 0;
   }
 
-  .user-navigation__left{
+  .user-navigation__left {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

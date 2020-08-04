@@ -288,6 +288,7 @@
   }
   .form__label--contact {
     padding: 0;
+    margin-right: 25px;
   }
   .form__input {
     background-color: transparent;
@@ -308,9 +309,6 @@
     input {
       margin-bottom: 0;
     }
-  }
-  .form__label--contact {
-    margin-right: 25px;
   }
   .form__bottom {
     display: flex;

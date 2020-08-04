@@ -44,7 +44,7 @@
   }
 }
 
-.burger--active .burger__item{
+.burger--active .burger__item {
   background-color: transparent;
   &::before {
     transform: translateY(6px) rotate(45deg);
